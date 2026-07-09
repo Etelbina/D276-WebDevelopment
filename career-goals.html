@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="" alt="Random Girl Codes Logo">
+        <img src="images/common/rgc-logo.svg" alt="Random Girl Codes Logo">
 
         <nav>
             <a href="resume.html">Résumé</a>
@@ -18,37 +18,186 @@
     </header>
 
     <main>
-            <section> 
-                <!-- Presentation -->
+            <section id="purpose">
+                <img src="images/goals/1.png" alt="">
+                <h1>Career Goals</h1>
+                <strong>Building a Career with Purpose</strong>
+                <p>
+                    Choosing to transition from music to software engineering was one of the 
+                    most significant decisions of my professional life. It meant leaving a field 
+                    I deeply valued to pursue a new challenge that better aligned with my curiosity, 
+                    interest in logical problem solving, and desire for continuous growth.
+                </p>
+                <p>
+                    My goal is to build a long-term career as a software engineer by developing both 
+                    technical expertise and professional experience. I am currently pursuing a 
+                    Bachelor of Science in Software Engineering at Western Governors University, 
+                    where every course, project, and new challenge brings me one step closer 
+                    to becoming the kind of engineer I aspire to be.
+                </p>
             </section>
 
-            <section> 
-                <!-- Short Term -->
+            <section id="short-term"> 
+                <img src="images/goals/leaf.svg" alt="">
+                <h2>Short-Term Goals</h2>
+                <ul>
+                    <li>
+                        Complete my B.S. in Software Engineering 
+                        within approximately two years.
+                    </li>
+                    <li>
+                        Continue expanding my portfolio with projects 
+                        that demonstrate practical software development skills.
+                    </li>
+                    <li>
+                        Secure a software engineering internship to gain experience 
+                        in a collaborative development environment.
+                    </li>
+                    <li>
+                        Develop a thoughtful workflow for using AI-assisted development tools, 
+                        learning how to use them responsibly to improve productivity 
+                        while continuing to strengthen my own problem-solving skills.
+                    </li>
+                </ul>
+                <img src="images/goals/2.png" alt="">
             </section>
 
-            <section> 
-                <!-- Mid Term -->
+            <section id="mid-term">
+                <img src="images/goals/sprout.svg" alt="">
+                <h2>Mid-Term Goals</h2>
+                <ul>
+                    <li>Begin my career as a software engineer.</li>
+                    <li>Contribute to production software used by real users.</li>
+                    <li>Expand my knowledge of software architecture, testing, 
+                        and scalable application design.
+                    </li>
+                    <li>Become a reliable contributor within collaborative engineering teams 
+                        while learning from experienced developers.
+                    </li>
+                </ul>
+                <img src="images/goals/3.png" alt="">
             </section>
 
-            <section> 
-                <!-- Long Term -->
+            <section id="long-term">
+                <img src="images/goals/tree.svg" alt="">
+                <h2>Long-Term Goals</h2>
+                <p>
+                    I hope to build a sustainable career that allows me to take on 
+                    meaningful technical challenges while maintaining the balance 
+                    needed to pursue my interests, relationships, and personal 
+                    well-being. I believe long-term success comes not only from 
+                    technical excellence, but also from curiosity, consistency, and a 
+                    healthy approach to both work and life.
+                </p>
+
+                <img src="images/goals/4.png" alt="">
+            </section>
+            
+            <section id="ahead"> 
+                <img src="images/goals/trees.svg" alt="">
+                <h2>Looking Ahead</h2>
+                <p>
+                    As my career progresses, I hope to contribute to increasingly 
+                    complex software projects involving larger codebases, 
+                    multidisciplinary teams, and greater technical responsibility. 
+                    I also look forward to mentoring others as I gain experience 
+                    and contributing to products that make a meaningful difference 
+                    for the people who use them.
+                </p>
+                <img src="images/goals/5.png" alt="">
             </section>
 
-            <section> 
-                <!-- Looking Ahead -->
-            </section>
+            <section id="connect">
+                <h2>Let's Connect</h2>
+                <p>
+                    If you'd like to discuss software engineering, collaboration, 
+                    career opportunities, or simply connect, I'd love to hear from you.
+                </p>
+                <div id="video">
+                    <video autoplay loop muted playsinline aria-hidden="true">
+                        <source src="images/goals/Video.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                </div>
+                <div id="audio">
+                    <audio controls loop aria-describedby="audio_credit">
+                        <source src="images/goals/Signal-to-Noise.mp3" type="audio/mpeg">
+                    </audio>
+                    <p id="audio_credit">
+                        <em>Audio: "Signal to Noise" by Hampus Naeselius. Licensed through Canva.</em>
+                    </p>
+                </div>
 
-            <section> 
-                <!-- Let's connect -->
+                <hr> 
+
+                <form action="https://wp.zybooks.com/form-viewer.php"  method="post">
+                    <p>
+                        <label for="first">First Name:</label>
+                        <input type="text" id="first" name="first">
+                    </p>
+
+                    <p>
+                        <label for="last">Last Name:</label>
+                        <input type="text" id="last" name="last">
+                    </p>
+
+                    <p>
+                        <label for="company">Company name:</label>
+                        <input type="text" id="company" name="company">
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email">
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </p>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message..."></textarea>
+                    
+                    <fieldset>
+                        <legend>Best contact time:</legend>
+                                            <div>
+                        <input type="radio" name="contact-time" value="am" id="am">
+                        <label for="am">a.m.</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="contact-time" value="pm" id="pm">
+                            <label for="pm">p.m.</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="contact-time" value="anytime" id="anytime">
+                            <label for="anytime">anytime</label>
+                        </div>
+                    </fieldset>
+
+                    <label for="method">Method:</label>
+                    <select id="method" name="method">
+                        <option value="phone">phone</option>
+                        <option value="email">email</option>
+                        <option value="text">text</option>
+                    </select>
+
+                    <input type="submit" value="Send message">
+                </form>
             </section>
     </main>
 
     <footer>
-        <img src="" alt="Random Girl Codes Logo">
+        <img src="images/common/rgc-logo.svg" alt="Random Girl Codes Logo">
         <p>Building software with curiosity and purpose.</p>
         <p>© 2026 Etelbina Cañedo</p>
-        <img src="" alt="LinkedIn">
-        <img src="" alt="GitHub">
+
+        <a href="https://www.linkedin.com/in/etelbina-canedo/">
+            <img src="images/common/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Etelbina">
+            <img src="images/common/github.svg" alt="GitHub">
+        </a>
     </footer>
 </body>
 </html>
