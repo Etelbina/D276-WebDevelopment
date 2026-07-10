@@ -1,0 +1,175 @@
+/* 1. VARIABLES ========================================= */
+
+:root {
+    --container-width: 1200px;
+
+    --radius-small: 0.25rem;
+    --radius-medium: 0.5rem;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+
+    --color-background: #3d3c3c;
+    --color-background-light: #fff0ef;
+
+    --color-softpink: #fff0ef;
+    --color-softgreen: #d8f1ee;
+
+    --color-accent-pink: #ffd8d5;
+    --color-accent-green: #b1e2de;
+
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #cfd4db;
+
+    --font-primary: "Figtree", sans-serif;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    --font-signature: "Bad Script", cursive;
+}
+
+/* 2. RESET ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. GLOBAL ========================================= */
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+    font-weight: var(--font-regular);
+    line-height: 1.5;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: var(--color-accent-pink);
+    text-decoration: none;
+}
+
+/*
+ul, ol {
+
+}
+
+table {
+
+}
+*/
+
+hr {
+    border: none;
+    border-top: 1px solid var(--color-softgreen);
+    margin: var(--space-lg) 0;
+}
+
+/* 4. TYPOGRAPHY ========================================= */
+
+.signature {
+    font-family: var(--font-signature);
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    font-weight: var(--font-bold);
+}
+
+h1 {
+font-size: 2.5rem;
+margin-bottom: var(--space-md);
+}
+
+h2 {
+font-size: 2rem;
+margin-bottom: var(--space-sm);
+}
+
+h3 {
+font-size: 1.5rem;
+margin-bottom: var(--space-xs);
+}
+
+p {
+font-size: 1rem;
+margin-bottom: var(--space-sm);
+color: var(--color-text-secondary);
+}
+
+/* 5. LAYOUT ========================================= */
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+header {
+    padding: var(--space-lg) 0;
+}
+
+main {
+    flex: 1;
+    padding: var(--space-lg) 0;
+}
+
+footer {
+    padding-top: var(--space-xl);
+    text-align: center;
+}
+
+/* =========================================
+   6. HEADER
+========================================= */
+
+/* =========================================
+   7. NAVIGATION
+========================================= */
+
+/* =========================================
+   8. SHARED COMPONENTS
+========================================= */
+
+/* cards */
+
+/* buttons */
+
+/* icons */
+
+/* section titles */
+
+/* =========================================
+   9. RESUME
+========================================= */
+
+/* =========================================
+   10. COVER LETTER
+========================================= */
+
+/* =========================================
+   11. CAREER GOALS
+========================================= */
+
+/* =========================================
+   12. FOOTER
+========================================= */
+
+/* =========================================
+   13. MEDIA QUERIES
+========================================= */
