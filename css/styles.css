@@ -1,7 +1,9 @@
-/* 1. VARIABLES ========================================= */
+/* BASE STYLE ========================================= */
+
+/* 1. Variables _________________________________________ */
 
 :root {
-    --container-width: 1200px;
+    --container-width: 1100px;
 
     --radius-small: 0.25rem;
     --radius-medium: 0.5rem;
@@ -14,6 +16,7 @@
 
     --color-background: #3d3c3c;
     --color-background-light: #fff0ef;
+    --color-accent-background: #4d4d4d;
 
     --color-softpink: #fff0ef;
     --color-softgreen: #d8f1ee;
@@ -32,7 +35,7 @@
     --font-signature: "Bad Script", cursive;
 }
 
-/* 2. RESET ========================================= */
+/* 2. Reset _________________________________________ */
 
 * {
     margin: 0;
@@ -40,7 +43,7 @@
     box-sizing: border-box;
 }
 
-/* 3. GLOBAL ========================================= */
+/* 3. Global _________________________________________ */
 
 body {
     background-color: var(--color-background);
@@ -80,7 +83,7 @@ hr {
     margin: var(--space-lg) 0;
 }
 
-/* 4. TYPOGRAPHY ========================================= */
+/* 4. Typography _________________________________________ */
 
 .signature {
     font-family: var(--font-signature);
@@ -112,16 +115,17 @@ margin-bottom: var(--space-sm);
 color: var(--color-text-secondary);
 }
 
-/* 5. LAYOUT ========================================= */
+
+/* 5. Layout _________________________________________ */
 
 .container {
+    width: 100%;
     max-width: var(--container-width);
     margin: 0 auto;
-    padding: 0 var(--space-md);
 }
 
 header {
-    padding: var(--space-lg) 0;
+    padding: var(--space-xs) var(--space-md);
 }
 
 main {
@@ -130,21 +134,53 @@ main {
 }
 
 footer {
-    padding-top: var(--space-xl);
+    padding: 3rem var(--space-md) var(--space-xs);
     text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-sm);
+    border-top: 1px solid var(--color-softgreen);
 }
 
-/* =========================================
-   6. HEADER
-========================================= */
+/* ========================================= */
+/*  COMMONS ========================================= */
 
-/* =========================================
-   7. NAVIGATION
-========================================= */
+/* 6. HEADER _________________________________________ */
 
-/* =========================================
-   8. SHARED COMPONENTS
-========================================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: .5px solid var(--color-softgreen);
+}
+
+header img {
+    height: 3.5rem;
+}
+
+/* 7. NAVIGATION _________________________________________ */
+
+nav {
+    display: flex;
+    gap: var(--space-xl);
+}
+
+nav a {
+    font-weight: var(--font-bold);
+    padding: var(--space-xs);
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    background-color: var(--color-accent-background);
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 3px solid var(--color-accent-pink);
+}
+
+/* 8. SHARED COMPONENTS _________________________________________ */
 
 /* cards */
 
@@ -154,6 +190,32 @@ footer {
 
 /* section titles */
 
+/* 12. FOOTER _________________________________________ */
+
+footer > img {
+    height: 3rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 var(--space-xs);
+}
+
+footer a img {
+    height: 4rem;
+    transition: transform 0.1s ease;
+}
+
+footer a:hover img {
+    transform: scale(1.3);
+}
+
+/* ========================================= */
 /* =========================================
    9. RESUME
 ========================================= */
@@ -164,10 +226,6 @@ footer {
 
 /* =========================================
    11. CAREER GOALS
-========================================= */
-
-/* =========================================
-   12. FOOTER
 ========================================= */
 
 /* =========================================
