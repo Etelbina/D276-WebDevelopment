@@ -3,136 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cover Letter</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>My Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">   
 </head>
 <body>
-    <header>
-        <img src="images/common/rgc-logo.svg" alt="Random Girl Codes Logo">
+    <div class="page">
+        <header class="container">
+            <img src="images/common/rgc-logo.svg" alt="Random Girl Codes Logo">
 
-        <nav>
-            <a href="resume.html">Résumé</a>
-            <a href="cover-letter.html">Cover Letter</a>
-            <a href="career-goals.html">Career Goals</a>
-        </nav>
-    </header>
+            <nav>
+                <a href="resume.html">Résumé</a>
+                <a href="cover-letter.html">Cover Letter</a>
+                <a href="career-goals.html">Career Goals</a>
+            </nav>
+        </header>
 
-    <main>
-        <article>
-            <section id="presentation">
-                <img src="images/cover/1.png" alt="">
-                <h1>Cover Letter</h1>
-                <strong><span>My journey into software engineering</span></strong> 
+        <main class="container">
+            <article>
+                <section id="presentation"  class="profile-layout">
+                    <img class="portrait" src="images/cover/1.png" alt="">
+                    
+                    <div class="presentation-info">
+                        <h1>Cover Letter</h1>
+                        <strong>
+                            <span>My journey into software engineering</span>
+                        </strong> 
 
-                <p>
-                    I didn't take a traditional path into software engineering. 
-                    I started as an opera singer, managing digital pages, events, 
-                    and communities for music projects.
-                </p>
-            </section>
+                        <p>
+                            I didn't take a traditional path into software engineering. 
+                            I started as an opera singer, managing digital pages, events, 
+                            and communities for music projects.
+                        </p>
+                    </div>
+                </section>
 
-            <section id="journey">
-                <img src="images/cover/journey.svg" alt="">
-                <h2>The journey</h2>
-                <p>
-                    What began as updating websites during the pandemic turned into a deeper curiosity:
-                    <em>how does the code behind the page actually work?</em> That question led me to SEO, 
-                    web architecture, and eventually to building full-stack applications myself.
-                </p>
-                <p>
-                    Programming became the place where my creative and analytical sides finally came together. 
-                    My background in music taught me discipline, attention to detail, and how to approach 
-                    complex systems—whether it's a musical score or a codebase. Digital communications 
-                    taught me to think from the user's perspective. Today, I combine both experiences 
-                    to build software that is logical, organized, and intentionally designed.
-                </p>
-                <img src="images/cover/2.png" alt="">
-            </section>
+                <section id="journey">
+                    <h2>
+                        <img src="images/cover/journey.svg" alt="">
+                        The journey
+                    </h2>
 
-            <section id="strengths">
-                 <img src="images/cover/strength.svg" alt="">
-                 <h2>What I bring</h2>
-                 <table>
-                    <caption>Professional strengths overview</caption>
-                    <thead>
-                        <tr>
-                            <th>
-                                <img src="images/cover/thinking.svg" alt="">
-                                Systems thinking
-                            </th>
-                            <th>
-                                <img src="images/cover/users.svg" alt="">
-                                User-centered craftsmanship
-                            </th>
-                            <th>
-                                <img src="images/cover/learning.svg" alt="">
-                                Continuous learning
-                            </th>
-                            <th>
-                                <img src="images/cover/planning.svg" alt="">
-                                Planning as a strength
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                I enjoy breaking down complex problems through structured analysis. 
-                                From developing REST APIs during Laboratoria to planning digital strategies 
-                                for small businesses, I naturally look for patterns, edge cases, and clean solutions.
-                            </td>
-                            <td>
-                                Good code isn't enough if it doesn't serve people. I strive to balance technical 
-                                quality with thoughtful user experiences, shaped by my background in branding 
-                                and creative communication.
-                            </td>
-                            <td>I am currently pursuing a Bachelor of Science in Software Engineering at 
-                                Western Governors University after completing Laboratoria's Full-Stack Web 
-                                Development Bootcamp and earning a Java Developer Certificate. I learn 
-                                best by building, experimenting, and continuously improving my skills.
-                            </td>
-                            <td>
-                                I'm a collector of languages, workflows, and planning systems. That interest 
-                                is reflected in how I organize projects, document decisions, and create 
-                                structured processes for learning and collaboration.
-                            </td>
-                        </tr>
-                    </tbody>
-                 </table>
-            </section>
+                    <div class="panel journey-layout">
 
-            <section id="closing">
-                <img src="images/cover/3.png" alt="">
-                <hr>
-                <img src="images/cover/quote.svg" alt="">
-                <blockquote>
-                    <p>
-                        I believe the best software comes from combining <mark>technical 
-                        knowledge with curiosity, creativity, and careful execution.</mark>
-                    </p>
-                    <p>
-                        As I continue growing as a software engineer, I look forward to contributing to 
-                        meaningful projects, learning from experienced teams, and building solutions 
-                        that are both reliable and enjoyable to use.
-                    </p>
-                </blockquote>
-                <p class="signature">Etelbina Cañedo</p>
-            </section>
+                        <div>
+                            <p>
+                                What began as updating websites during the pandemic turned into a deeper curiosity:
+                                <em>how does the code behind the page actually work?</em> That question led me to SEO, 
+                                web architecture, and eventually to building full-stack applications myself.
+                            </p>
+                            <p>
+                                Programming became the place where my creative and analytical sides finally came together. 
+                                My background in music taught me discipline, attention to detail, and how to approach 
+                                complex systems—whether it's a musical score or a codebase. Digital communications 
+                                taught me to think from the user's perspective. Today, I combine both experiences 
+                                to build software that is logical, organized, and intentionally designed.
+                            </p>
+                        </div>
+                        <img src="images/cover/2.png" alt="">
+                    </div>  
+                </section>
 
-        </article>
-    </main>
+                <section id="strengths">
+                    <h2>
+                        <img src="images/cover/strength.svg" alt="">
+                        What I bring
+                    </h2>
+                    <div class="panel strengths-grid">
 
-    <footer>
-        <img src="images/common/rgc-logo.svg" alt="Random Girl Codes Logo">
-        <p>Building software with curiosity and purpose.</p>
-        <p>© 2026 Etelbina Cañedo</p>
+                                <article>
+                                    <img src="images/cover/thinking.svg" alt="">
+                                    <h3 class="green">Systems thinking</h3>
+                                    <p>
+                                        I enjoy breaking down complex problems through structured analysis. 
+                                        From developing REST APIs during Laboratoria to planning digital strategies 
+                                        for small businesses, I naturally look for patterns, edge cases, and clean solutions.
+                                    </p>
+                                </article>
+                                <article>
+                                    <img src="images/cover/users.svg" alt="">
+                                    <h3>User centered</h3>
+                                    <p>
+                                        Good code isn't enough if it doesn't serve people. I strive to balance technical 
+                                        quality with thoughtful user experiences, shaped by my background in branding 
+                                        and creative communication.
+                                    </p>
+                                </article>
+                                <article>
+                                    <img src="images/cover/learning.svg" alt="">
+                                    <h3 class="green">Continuous learning</h3>
+                                    <p>
+                                        I am currently pursuing a Bachelor of Science in Software Engineering at 
+                                        Western Governors University after completing Laboratoria's Full-Stack Web 
+                                        Development Bootcamp and earning a Java Developer Certificate. I learn 
+                                        best by building, experimenting, and continuously improving my skills.
+                                    </p>
+                                </article>
+                                <article>
+                                    <img src="images/cover/planning.svg" alt="">
+                                    <h3>Planning as a strength</h3>
+                                    <p>
+                                        I'm a collector of languages, workflows, and planning systems. That interest 
+                                        is reflected in how I organize projects, document decisions, and create 
+                                        structured processes for learning and collaboration.
+                                    </p>
+                                </article>
+                     </div>
+                </section>
 
-        <a href="https://www.linkedin.com/in/etelbina-canedo/">
-            <img src="images/common/linkedin.svg" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/Etelbina">
-            <img src="images/common/github.svg" alt="GitHub">
-        </a>
-    </footer>
+                <section id="closing">
+                    <div class="panel closing-layout">
+                        <img src="images/cover/3.png" alt="">
+
+                        <hr>
+
+                        <div class="closing-content">
+                            <img src="images/cover/quote.svg" alt="">
+                            <blockquote>
+                                <p>
+                                    I believe the best software comes from combining <mark>technical 
+                                    knowledge with curiosity, creativity, and careful execution.</mark>
+                                </p>
+                                <p>
+                                    As I continue growing as a software engineer, I look forward to contributing to 
+                                    meaningful projects, learning from experienced teams, and building solutions 
+                                    that are both reliable and enjoyable to use.
+                                </p>
+                            </blockquote>
+                            <p class="signature">Etelbina Cañedo</p>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+        </main>
+
+        <footer class="container">
+            <img src="images/common/rgc-logo.svg" alt="Random Girl Codes Logo">
+            <p>Building software with curiosity and purpose.</p>
+            <p>© 2026 Etelbina Cañedo</p>
+
+            <a href="https://www.linkedin.com/in/etelbina-canedo/">
+                <img src="images/common/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Etelbina">
+                <img src="images/common/github.svg" alt="GitHub">
+            </a>
+        </footer>
+    </div>
 </body>
 </html>
