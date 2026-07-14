@@ -7,6 +7,7 @@
 
     --radius-small: 0.25rem;
     --radius-medium: 0.5rem;
+    --radius-large: 1rem;
 
     --space-xs: 0.5rem;
     --space-sm: 1rem;
@@ -147,13 +148,13 @@ footer {
 /* ========================================= */
 /*  COMMONS ========================================= */
 
-/* 6. HEADER _________________________________________ */
+/* 6. Header _________________________________________ */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    
     border-bottom: .5px solid var(--color-softgreen);
 }
 
@@ -161,7 +162,7 @@ header img {
     height: 3.5rem;
 }
 
-/* 7. NAVIGATION _________________________________________ */
+/* 7. Navigation _________________________________________ */
 
 nav {
     display: flex;
@@ -180,7 +181,26 @@ nav a:hover {
     border-bottom: 3px solid var(--color-accent-pink);
 }
 
-/* 8. SHARED COMPONENTS _________________________________________ */
+/* 8. Shared components _________________________________________ */
+
+h2 {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--color-accent-pink);
+    text-transform: uppercase;
+    padding: var(--space-xl) 0 var(--space-xs);
+}
+
+h2 img {
+    width: 2.5rem;
+}
+
+.panel {
+    padding: var(--space-lg);
+    border: .5px solid var(--color-softgreen);
+    border-radius: var(--radius-large);
+}
 
 /* cards */
 
@@ -190,7 +210,7 @@ nav a:hover {
 
 /* section titles */
 
-/* 12. FOOTER _________________________________________ */
+/* 12. Footer _________________________________________ */
 
 footer > img {
     height: 3rem;
@@ -216,18 +236,350 @@ footer a:hover img {
 }
 
 /* ========================================= */
-/* =========================================
-   9. RESUME
-========================================= */
+/* PAGES ========================================= */
 
-/* =========================================
-   10. COVER LETTER
-========================================= */
+/* 9. Resume _________________________________________ */
 
-/* =========================================
-   11. CAREER GOALS
-========================================= */
+/* lay out */
 
+#profile {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xl);
+}
+
+#profile .portrait {
+    width: 360px;
+    flex-shrink: 0;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.profile-info h1 {
+    font-size: 4rem;
+}
+
+.profile-info p {
+    color: var(--color-accent-pink);
+    font-size: 1.5rem;
+    font-weight: var(--font-medium);
+}
+
+.profile-info span {
+    font-weight: var(--font-bold);
+}
+
+/* address */
+
+address {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-lg);
+    font-style: normal;
+}
+
+address div {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+address img {
+    width: 1.25rem;
+    flex-shrink: 0;
+}
+
+.profile-info address p,
+.profile-info address a {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-weight: var(--font-bold);
+    font-size: 1rem;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+/* table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-right: .5px solid var(--color-softgreen);
+    border-radius: var(--radius-medium);
+}
+
+th:last-child,
+td:last-child {
+    border-right: none;
+}
+
+.table-wrapper {
+    border: 1px solid var(--color-softgreen);
+    border-radius: var(--radius-large);
+    overflow: hidden;
+}
+
+caption {
+    position: absolute;
+    left: -9999px;
+}
+
+#skills p {
+    margin-bottom: var(--space-md);
+    color: var(--color-text-secondary);
+    /* font-style: italic; */
+    text-align: left;
+}
+
+thead {
+    background-color: var(--color-accent-background);
+}
+
+th {
+    padding: var(--space-sm);
+    text-align: left;
+}
+
+.table-heading {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.table-heading img {
+    width: 2rem;
+    flex-shrink: 0;
+}
+
+.table-heading span {
+    color: var(--color-accent-green);
+    font-size: 1.5rem;
+}
+
+tbody td {
+    padding: var(--space-xs) var(--space-md);
+}
+
+td::before {
+    content: "● ";
+    color: var(--color-accent-green);
+    padding-right: .5rem;
+}
+
+td:empty::before {
+    content: "";
+}
+
+/* Project cards */
+
+.card-row {
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.card {
+    flex: 1;
+    padding: var(--space-md);
+    border: .5px solid var(--color-softgreen);
+    border-radius: var(--radius-large);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.card-header img {
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: var(--color-accent-pink);
+    padding: var(--space-sm);
+    border-radius: 50%;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    color: var(--color-accent-green);
+    padding-bottom: var(--space-xs);
+    min-height: 6rem;
+    gap: var(--space-md);
+}
+
+/* Experience */
+
+/* Professional Experience */
+
+#experience article {
+    padding: var(--space-md) 0;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: var(--space-lg);
+}
+
+#experience article {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: var(--space-lg);
+    padding: var(--space-lg) 0;
+}
+
+#experience article > div:first-child {
+    grid-column: 1;
+}
+
+#experience article > div:last-child {
+    grid-column: 2;
+}
+
+#experience h3 {
+    margin-bottom: var(--space-xs);
+    color: var(--color-accent-green);
+}
+
+.period {
+    color: var(--color-accent-pink);
+    font-weight: var(--font-bold);
+}
+
+#experience article > p:first-of-type {
+    margin-bottom: var(--space-md);
+    font-weight: var(--font-bold);
+    color: var(--color-accent-pink);
+}
+
+#experience ul {
+    margin-left: var(--space-lg);
+    color: var(--color-text-secondary);
+}
+
+#experience li {
+    margin-bottom: var(--space-xs);
+}
+
+#experience li:last-child {
+    margin-bottom: 0;
+}
+
+/* Education */
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+#education {
+    display: block;
+}
+
+#education h2 {
+    grid-column: 1 / -1;
+}
+
+#education article {
+    padding: 0 var(--space-md);
+    
+}
+
+#education article:not(:last-child) {
+    border-right: .5px solid var(--color-softgreen);
+}
+
+#education h3 {
+    color: var(--color-accent-green);
+    margin-bottom: var(--space-xs);
+}
+
+#education h4 {
+    color: var(--color-accent-pink);
+    font-size: 1.1rem;
+    font-weight: var(--font-medium);
+    margin-bottom: var(--space-sm);
+}
+
+#education p,
+#education ul {
+    color: var(--color-text-secondary);
+}
+
+#education ul {
+    margin-left: var(--space-lg);
+}
+
+#education li {
+    margin-bottom: var(--space-xs);
+}
+
+#education li:last-child {
+    margin-bottom: 0;
+}
+
+/*  */
+/* .training-interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+}
+
+#training {
+    padding-right: var(--space-xl);
+    border-right: .5px solid var(--color-softgreen);
+} */
+ .training-interests {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: var(--space-xl);
+
+    margin: 6rem 0;
+}
+
+.training-interests hr {
+    width: 1px;
+    height: 100%;
+    border: none;
+    background: var(--color-softgreen);
+    margin: 0;
+}
+
+#training {
+    border-right: none;
+    padding-right: 0;
+}
+
+/* Additional Training */
+
+#training ul {
+    margin-left: var(--space-lg);
+    color: var(--color-text-secondary);
+}
+
+#training li {
+    margin-bottom: var(--space-xs);
+}
+
+#training li:last-child {
+    margin-bottom: 0;
+}
+
+/* Interests */
+
+#interests p {
+    max-width: 70ch;
+}
+
+/* 10. Cover letter _________________________________________ */
+
+/* 11. Career goals _________________________________________ */
+
+/* ========================================= */
 /* =========================================
-   13. MEDIA QUERIES
-========================================= */
+   13. MEDIA QUERIES _________________________________________ */
