@@ -134,7 +134,6 @@ margin-bottom: var(--space-sm);
 color: var(--color-text-secondary);
 }
 
-
 /* 5. Layout _________________________________________ */
 
 .container {
@@ -349,6 +348,10 @@ address a:hover {
 
 /* table */
 
+.skills-mobile {
+    display: none;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -455,8 +458,6 @@ td:empty::before {
     min-height: 6rem;
     gap: var(--space-md);
 }
-
-/* Experience */
 
 /* Professional Experience */
 
@@ -949,10 +950,268 @@ input[type="submit"]:hover {
     transform: translateY(-2px);
 }
 
-/* input[type="submit"]:active {
-    transform: translateY(0);
-} */
-
 /* ========================================= */
-/* =========================================
-   13. MEDIA QUERIES _________________________________________ */
+/* 13. MEDIA QUERIES _________________________________________ */
+
+@media (max-width: 768px) {
+
+     /* ---------- Shared ---------- */
+
+    .page {
+        padding: 0 var(--space-md);
+    }
+
+    main {
+        padding: var(--space-md) 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        padding-top: var(--space-lg);
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-sm);
+    }
+
+    header {
+        flex-direction: column;
+        gap: var(--space-md);
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* ====================================== */
+    /* =============== RESUME =============== */
+
+    /* ---------- Resume : Profile ---------- */
+
+    .profile-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portrait {
+        margin-top: var(--space-xl);
+        width: 220px;
+    }
+
+    .profile-info h1 {
+        font-size: 2.6rem;
+    }
+
+    .profile-info p {
+        font-size: 1.2rem;
+    }
+
+    address {
+        justify-content: center;
+    }
+
+    /* ---------- Resume : Technical Skills ---------- */
+
+    .table-wrapper {
+        display: none;
+    }
+
+    .skills-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-lg);
+    }
+
+    .skills-mobile h3 {
+        display: flex;
+        align-items: center;
+        gap: var(--space-sm);
+
+        color: var(--color-accent-green);
+        margin-bottom: var(--space-md);
+    }
+
+    .skills-mobile h3 img {
+        width: 2rem;
+    }
+
+    .skills-mobile ul {
+        margin-left: 1.25rem;
+    }
+
+    .skills-mobile li {
+        margin-bottom: var(--space-xs);
+        color: var(--color-text-secondary);
+    }
+
+    /* ---------- Resume : Projects ---------- */
+
+    .card-row {
+        flex-direction: column;
+    }
+
+    /* ---------- Resume : Experience ---------- */
+
+    #experience article {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+
+    #experience article > div:first-child,
+    #experience article > div:last-child {
+        grid-column: auto;
+    }
+
+    /* ---------- Resume : Education ---------- */
+
+    .columns-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .columns-4 > article {
+        padding: var(--space-lg) 0;
+        margin: var(--space-xs) 0;
+    }
+
+    .columns-4 > article:not(:last-child) {
+        border-right: none;
+        border-bottom: .5px solid var(--color-softgreen);
+    }
+
+    ul {
+        padding-bottom: var(--space-sm);
+    }
+
+     /* ---------- Resume : Training ---------- */
+
+    .training-interests {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+        margin: 4rem 0;
+    }
+
+    .training-interests hr {
+        display: none;
+    }
+
+    /* ============================================ */
+    /* =============== COVER LETTER =============== */
+
+    #strengths p {
+        padding-bottom: var(--space-sm);
+    }
+
+    /* ---------- Cover Letter : Journey ---------- */
+
+    .journey-layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .journey-layout img {
+        justify-self: center;
+        max-width: 220px;
+    }
+
+    /* ---------- Cover Letter : Closing ---------- */
+
+    .closing-layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .closing-layout hr {
+        display: none;
+    }
+
+    .closing-layout > img {
+        justify-self: center;
+        max-width: 220px;
+    }
+
+    .closing-content {
+        text-align: center;
+        align-items: center;
+    }
+
+    .signature {
+        margin-left: 0;
+    }
+
+    /* ============================================ */
+    /* =============== CAREER GOALS =============== */
+
+    /* ---------- Career Goals : Goals ---------- */
+
+    #purpose {
+        margin-top: var(--space-md);
+    }
+    .timeline {
+        display: none;
+    }
+
+    .goal-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+        padding-bottom: 5rem;
+    }
+
+    #goals article {
+        margin-bottom: var(--space-md);
+    }
+    .goal-card {
+        padding-top: var(--space-md);
+    }
+
+    .goal-card > img:first-child {
+        margin:  -5rem auto var(--space-xs);
+        /* margin-top: 5erm; */
+    }
+
+
+    /* ---------- Career Goals : Connect ---------- */
+
+    #connect {
+        margin-top: var(--space-xl);
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+
+    #connect hr {
+        display: none;
+    }
+
+    /* ---------- Career Goals : Form ---------- */
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-field,
+    .full-width,
+    fieldset,
+    textarea,
+    input[type="submit"] {
+        grid-column: auto;
+    }
+
+    input[type="submit"] {
+        margin-top: var(--space-lg);
+        width: 100%;
+        max-width: 200px;
+        justify-self: center;
+    }
+
+}
