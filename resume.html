@@ -55,7 +55,25 @@
                             </div>
                         </address>
                         
+                        <div id="current-date-lable">Today's date:</div>
                         <div id="current-date"></div>
+                        <script>
+                            const today = new Date();
+
+                            document.getElementById("current-date-lable").textContent =
+                                "Today's date: " +
+                                today.toLocaleDateString("en-US", {
+                                    weekday: "long",
+                                    year: "numeric",
+                                    month: "long",
+                                    day: "numeric"
+                                });
+
+                            console.log("Resume page loaded successfully.");
+                        </script>
+
+
+
                     </div>
                 </section>
 
@@ -399,10 +417,10 @@
             <p>© 2026 Etelbina Cañedo</p>
 
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/etelbina-canedo/">
+                <a href="https://www.linkedin.com/in/etelbina-canedo/" target="_blank" rel="noopener">
                     <img src="images/common/linkedin.svg" alt="LinkedIn">
                 </a>
-                <a href="https://github.com/Etelbina">
+                <a href="https://github.com/Etelbina" target="_blank" rel="noopener">
                     <img src="images/common/github.svg" alt="GitHub">
                 </a>
             </div>
