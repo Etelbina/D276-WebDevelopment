@@ -1,2 +1,2 @@
 # D276-WebDevelopment
-WGU Web Development Foundations Performance Assessment 
+This project was originally developed as part of Web Development Foundations at Western Governors University.
